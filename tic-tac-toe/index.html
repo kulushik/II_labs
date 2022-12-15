@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" type="text/css" href="css/misc.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/ico/1.ico" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body onload="activeChangeSize()">
+    <H1>Tic-Tac-Toe</H1>
+    <H1 id="winDisplay">X O D</H1>
+    <table id="tools" align="center">
+      <tr>
+      <td><input type="button" id="newgamebtn" class="highlight" value="↺"></td>
+      <td><input type="button" id="changethemebtn" class="highlight" value="✧" onclick="draw();"></td>
+      <td><input type="button" id="changesize" class="highlight" value="3"></td>
+      <td><input type="button" id="aibtn" class="highlight" value="AI" onclick="enableAi()"></td>
+      </tr>
+    </table>
+    <p></p>
+    <div id="placeforbtns" align="center"></div>
+    <p></p>
+    <script src="js/base.js"></script>
+    <script src="js/changetheme.js"></script>
+    <script src="js/fieldsize.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/keylog.js"></script>
+    <script src="js/displayWin.js"></script>
+  </body>
+</html>

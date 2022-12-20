@@ -15,3 +15,25 @@ tr([X|T], [Y|R]):-
     tr(T, R).
 
 % ?- tr([hello, world, man], R)
+
+% ⌃⌃⌃⌃old⌃⌃⌃⌃ %
+
+% ⌄⌄⌄⌄new⌄⌄⌄⌄ %
+
+translate([X|T], [Y|T]):-
+    word(X,Y).
+translate([H|X], [H|Y]):-
+    translate(X,Y).
+
+% ?- tr([hello, world, man], R)
+
+
+/*
+Подсчитать количество элементов списка.
+*/
+len([], 0).
+len([_|T], N):-
+    len(T, M), 
+    N is M+1.
+
+% ?- len([a, b, c, d, e], L).

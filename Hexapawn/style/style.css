@@ -1,0 +1,28 @@
+    html, body {
+     padding:0; margin:0; background:dimgray;
+    }
+    .board{
+     padding:0; margin:auto; width:33vh;height:33vh;
+    }
+    .long, .button, .empty {
+     border: 2px solid black; margin:0,5vh; height:10vh; width:10vh; line-height:3vh; text-align:center;
+     font-size:8vh; vertical-align:middle; background:white; border-radius:15px; cursor:pointer;
+    }
+    .empty {
+     background:lightgray;
+    }
+    .txt { 
+     color:white; text-align:center; font-size:2vh; 
+    }
+    .hide {
+     display:none;
+    }
+    .marked {
+     border:green 3px solid;
+    }
+    .long {
+     width:100%; font-size:2vh;
+    }
+    #title { 
+     font-size:30px; color:white; text-align:center; 
+    }

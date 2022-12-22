@@ -29,11 +29,22 @@ translate([H|X], [H|Y]):-
 
 
 /*
-Подсчитать количество элементов списка.
+Среднее арифметическое
 */
+sum([], 0).
+sum([H|T], S):-
+    sum(T, ST),
+    S is ST+H.
+
 len([], 0).
 len([_|T], N):-
     len(T, M), 
     N is M+1.
 
-% ?- len([a, b, c, d, e], L).
+avg([], 0):-!.
+avg(L, A):-
+    sum(L, S),
+    len(L, K),
+    A is S/K.
+    
+% ?- avg([1,2,3], A).
